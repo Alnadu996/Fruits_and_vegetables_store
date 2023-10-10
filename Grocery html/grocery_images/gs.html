@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            position: absolute;
+            width: max-content;
+        }
+        .card{
+            border: 1px solid black;
+            width: max-content;
+            text-align: center;
+            display: inline-block;
+            margin: 5px;
+        }
+        .card img{
+            width: 300px;
+            height: 227px;
+            padding: 5px;
+        }
+        .title{
+            font-weight: 20px;
+        }
+        button{
+            border: 2px solid #e1701a;
+            background:#f7a440 ;
+            color: white;
+            font-weight: bold;
+            margin: 20px;
+            padding: 5px 10px;
+        }
+        button:hover{
+            box-shadow: 0 0 5px 5px #e1701a inset;
+        }
+        .cart{
+            width: 250px;
+            float: right;
+            text-align: center;
+            border: 1px solid black;
+            overflow-y: scroll;
+            height: 100%;
+        }
+        .cartImg > img{
+              width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card" id="item1">
+           <img src="/grocery_images/fruits/Apple.jpg" alt=""> 
+           <div class="title">apple</div>
+           <div>
+            <label for="">Qty: </label>
+            <select name="" id="opt">
+                <option value="">1kg</option>
+                <option value="">2kg</option>
+                <option value="">3kg</option>
+                <option value="">4kg</option>
+            </select>
+           </div>
+          <button onclick="addToCart(item1)">Add to cart</button>
+        </div>
+
+        <div class="card" id="item2">
+            <img src="/grocery_images/fruits/custord_apple.jpeg" alt=""> 
+            <div class="title">custord Apple</div>
+            <div>
+             <label for="">Qty: </label>
+             <select name="" id="opt">
+                 <option value="">1kg</option>
+                 <option value="">2kg</option>
+                 <option value="">3kg</option>
+                 <option value="">4kg</option>
+             </select>
+            </div>
+           <button onclick="addToCart(item2)">Add to cart</button>
+         </div>
+    </div>
+    <div class="cart" id="cart">
+        <div class="title">CART</div><hr/>
+        <div id="title"></div>
+    </div>
+    <script>
+        var addItemId = 0;
+        function addToCart(item){
+            addItemId += 1;
+   var selectedItem = document.createElement('div');
+   selectedItem.classList.add('cartImg');
+   selectedItem.setAttribute('id',addItemId);
+   var img = document.createElement('img');
+   img.setAttribute('src', item.children[0].currentSrc);
+   var title = document.createElement('div');
+   title.innerText = item.children[1].innerText;
+   var label = document.createElement('div');
+   label.innerText = item.children[2].children[0].innerText;
+   var select = document.createElement('span');
+   select.innerText = item.children[2].children[1].value;
+   label.append(select);
+   var delBtn = document.createElement('button');
+   delBtn.innerText = 'Delete';
+   delBtn.setAttribute('onclick','del('+addItemId+')');
+   var cartItems = document.getElementById('title');
+   selectedItem.append(img);
+   selectedItem.append(title);
+   selectedItem.append(label);
+   selectedItem.append(delBtn);
+   cartItems.append(selectedItem);
+        }
+        function del (item) {
+            document.getElementById(item).remove();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="grocery.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script type="text/javascript" src="addToCart.js"></script> -->
+</head>
+<body>
+    <div class="parallax">
+        <div class="page_title">Fresh <span>Basket</span>
+        </div>
+    </div>
+    <div class="navbar" id="sticky">
+        <ul>
+          <a href="#home" class="a_menu"><li><i class="fa fa-home"></i></li></a>
+          <a href="#deals" class="a_menu"><li>Deals</li></a>
+          <a href="#vegetables" class="a_menu"><li>Vegetables</li></a>
+          <a href="#fruits" class="a_menu"><li>Fruits</li></a>
+          <a href="#meat" class="a_menu"><li>Meat</li></a>
+          <a href="#milk" class="a_menu"><li>Milk Products</li></a>
+          <a href="#cart" class="a_menu"><li><i class="fa fa-shopping-cart"></i></li></a>
+        </ul>
+        <div class="searchbox">
+            <form>
+                <input type="text" placeholder="search..." name="search" class="search_input">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+        </div>
+    </div>
+    <!-- home page -->
+    <div class="container" id="home">
+        <a href="#vegetables">
+            <div class="categories">
+                <img src="grocery_images/vegetables/vegetables.webp" class="item_img">
+                <div class="img_title">Vegetables</div>
+            </div>
+        </a>
+        <a href="#fruits">
+            <div class="categories">
+                <img src="grocery_images/fruits/fruits.jpeg" class="item_img">
+                <div class="img_title">Fruits</div>
+            </div>
+        </a>
+        <a href="#meat">
+            <div class="categories">
+                <img src="grocery_images/meat/meat.webp" class="item_img">
+                <div class="img_title">Meat & Seafoods</div>
+            </div>
+        </a>
+        <a href="#milk">
+            <div class="categories">
+                <img src="grocery_images/milk/milk P.jpeg" class="item_img">
+                <div class="img_title">Milk & Milk Products</div>
+            </div>
+        </a>
+        <a href="#deals">
+            <div class="categories">
+                <img src="grocery_images/deals.jpeg" class="item_img">
+                <div class="img_title">Deals</div>
+            </div>
+        </a>
+    </div>
+    <!-- deal -->
+    <div class="deal_container" id="deals">
+        <div class="parallax">
+    <div class="title">DEALS</div>
+</div>
+<div class="deal">
+    Save 20% on min-purchase of Rs.149 on vegetables<br>
+    <button class="coupan_btn">Add Coupon</button>
+</div>
+<div class="deal">
+    Save 20% on min-purchase of RS.299 on fruits<br>
+    <button class="coupan_btn">Add Coupon</button>
+</div>
+<div class="deal">
+    Save 20% on min-purchase of Rs.199 on meat/seafood<br>
+    <button class="coupan_btn">Add Coupon</button>
+</div>
+    </div>
+<!-- deal end -->
+    <!-- veg -->
+    <div class="deal_container" id="vegetables">
+        <div class="parallax">
+            <div class="title">VEGETABLES</div>
+        </div>
+        <!-- 1 -->
+        <div class="items"  id="item1">
+            <div class="images" >
+                <img src="grocery_images/vegetables/Okra.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Okra</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs. 20/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 2 -->
+        <div class="items" id="item2">
+            <div class="images" >
+                <img src="grocery_images/vegetables/tomato.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Tomato</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  30/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item2)">Add To Cart</button>
+        </div>
+        <!-- 3 -->
+        <div class="items" id="item3">
+            <div class="images" >
+                <img src="grocery_images/vegetables/brokili.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Broccoli</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  40/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item3)">Add To Cart</button>
+        </div>
+           
+        <!-- 4 -->
+        <div class="items" id="item4">
+            <div class="images" >
+                <img src="grocery_images/vegetables/bitter_guard.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Bitter Gourd</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  30/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item4)">Add To Cart</button>
+        </div>
+
+        <!-- 5 -->
+        <div class="items">
+            <div class="images" id="item5">
+                <img src="grocery_images/vegetables/bottle_gourd.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Bottle Gourd</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs. 25/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item5)">Add To Cart</button>
+        </div>
+        <!-- 6 -->
+        <div class="items">
+            <div class="images" id="item6">
+                <img src="grocery_images/vegetables/brinjal.webp" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Brinjal</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  20/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item6)">Add To Cart</button>
+        </div>
+        <!-- 7 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/cabbage.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Cabbage</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  30/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 8 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/carrot.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Carrot</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  40/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 9 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/cauliflower.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Cauliflower</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  15/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 10 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/coccoomber.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Coccoomber</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  15/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 11 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/onion.webp" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Onion</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  10/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 12 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/peppers.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Green peppers</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  40/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 13 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/radish.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Radish</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  16/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 14 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/spinach.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Spinach</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  10/bundle
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>1 bundle</option>
+                    <option>2 bundles </option>
+                    <option>3 bunles</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+         <!-- 15 -->
+         <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/potato.avif" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Potato</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  17/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+         <!-- 16 -->
+         <div class="items">
+            <div class="images" >
+                <img src="grocery_images/vegetables/beet.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Beet-root</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  40/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+    </div>
+    <!-- vegetables end -->
+    <!-- fruits start -->
+    <div class="deal_container" id="fruits">
+        <div class="parallax">
+            <div class="title">FRUITS</div>
+        </div>
+           <!-- 1 -->
+           <div class="items"  id="item1">
+            <div class="images" >
+                <img src="grocery_images/fruits/Apple.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Apple</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs. 60/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 2 -->
+        <div class="items" id="item2">
+            <div class="images" >
+                <img src="grocery_images/fruits/custord_apple.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Custord Apple</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  35/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 3 -->
+        <div class="items" id="item3">
+            <div class="images" >
+                <img src="grocery_images/fruits/banana.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Banana</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  30/Dozen
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>1 Dozen</option>
+                    <option>2 Dozen</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+           
+        <!-- 4 -->
+        <div class="items" id="item4">
+            <div class="images" >
+                <img src="grocery_images/fruits/grapes.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Grapes</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  30/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+
+        <!-- 5 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/kiwi.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Kiwi</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs. 70/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 6 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/mango.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Mango</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  45/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 7 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/Orange.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Orange</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  30/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 8 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/Papaya.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Papaya</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  15/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 9 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/pearfruit.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Pear</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  40/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 10 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/pomegranate.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Pomegranate</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  50/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 11 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/sapodilla.webp" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Sapodilla</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  20/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 12 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/pineapple.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Pineapple</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  20/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 13 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/strawberry.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Strawberry</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  60/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 14 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/watermelon.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic watermelon</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  10/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+         <!-- 15 -->
+         <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/dragon_fruits.webp" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Dragon fruits</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  70/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+         <!-- 16 -->
+         <div class="items">
+            <div class="images" >
+                <img src="grocery_images/fruits/jackfruit.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Organic Jack-fruit</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  60/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+    </div>
+    <!-- fruits end -->
+
+       <!-- Meat start -->
+       <div class="deal_container" id="meat">
+        <div class="parallax">
+            <div class="title">MEAT & SEAFOODS</div>
+        </div>
+         <!-- 1 -->
+         <div class="items"  id="item1">
+            <div class="images" >
+                <img src="grocery_images/meat/chicken.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b> Chicken</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs. 70/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 2 -->
+        <div class="items" id="item2">
+            <div class="images" >
+                <img src="grocery_images/meat/duck.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b> Duck</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  110/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 3 -->
+        <div class="items" id="item3">
+            <div class="images" >
+                <img src="grocery_images/meat/Quail.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Quail</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  200/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+           
+        <!-- 4 -->
+        <div class="items" id="item4">
+            <div class="images" >
+                <img src="grocery_images/meat/mutton.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Mutton </b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  220/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+
+        <!-- 5 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/shivon.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>shivon</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs. 175/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 6 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/beef.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Beef</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  45/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 7 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/pork.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Pork</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  100/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 8 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/Rabbit.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Rabbit</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  90/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 9 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/Pomfret.jpg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Pomfret</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  200/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 10 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/Crab.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Crab</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  225/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 11 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/fish.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Rohu fish</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  50/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 12 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/Corpo fish.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Rani Fish</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  70/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 13 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/prawns.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Prawns</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  100/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+        <!-- 14 -->
+        <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/Rawas fish.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Rawas</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  150/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+         <!-- 15 -->
+         <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/Surmai.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Surmai</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  70/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+         <!-- 16 -->
+         <div class="items">
+            <div class="images" >
+                <img src="grocery_images/meat/catla.jpeg" class="item_img_size">                
+            </div>
+            <div class="itm_title">
+                <b>Catla</b><br>
+            </div>
+                <label for="price" class="price">
+                    <b>Price :</b> Rs.  60/250grams
+                </label>
+                <div class="qty">
+                <label for="quantity"><b>Qty :</b></label>
+                <select class="itm_select">
+                    <option>250 grams</option>
+                    <option>500 grams</option>
+                    <option>750 grams</option>
+                    <option>1000 grams</option>
+                </select><br/>
+            </div>
+            <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+        </div>
+    </div>
+    <!-- meat end -->
+
+    <!-- milk start -->
+    <div class="deal_container" id="milk">
+        <div class="parallax">
+            <div class="title">MILK & MILK PRODUCTS</div>
+        </div> 
+         <!-- 1 -->
+        <div class="items"  id="item1">
+           <div class="images" >
+               <img src="grocery_images/milk/Cow milk.jpeg" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b> Cow Milk</b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs. 15/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+       </div>
+       <!-- 2 -->
+       <div class="items" id="item2">
+           <div class="images" >
+               <img src="grocery_images/milk/Buffalo milk.jpg" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b> Buffalo milk</b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs.  17/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+       </div>
+       <!-- 3 -->
+       <div class="items" id="item3">
+           <div class="images" >
+               <img src="grocery_images/milk/Curd.jpeg" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b>Curd</b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs.  30/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+       </div>
+          
+       <!-- 4 -->
+       <div class="items" id="item4">
+           <div class="images" >
+               <img src="grocery_images/milk/Yogurt.webp" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b>Yogurt </b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs.  90/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+       </div>
+
+       <!-- 5 -->
+       <div class="items">
+           <div class="images" >
+               <img src="grocery_images/milk/Khoa.jpg" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b>Khoa</b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs. 75/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+       </div>
+       <!-- 6 -->
+       <div class="items">
+           <div class="images" >
+               <img src="grocery_images/milk/Paneer.jpeg" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b>Paneer</b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs.  60/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+       </div>
+       <!-- 7 -->
+       <div class="items">
+           <div class="images" >
+               <img src="grocery_images/milk/Cheese.jpeg" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b>Cheese</b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs.  70/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item1)">Add To Cart</button>
+       </div>
+       <!-- 8 -->
+       <div class="items" >
+           <div class="images" id="item7">
+               <img src="grocery_images/milk/Ghee.jpg" class="item_img_size">                
+           </div>
+           <div class="itm_title">
+               <b>Ghee</b><br>
+           </div>
+               <label for="price" class="price">
+                   <b>Price :</b> Rs.  250/250grams
+               </label>
+               <div class="qty">
+               <label for="quantity"><b>Qty :</b></label>
+               <select class="itm_select">
+                   <option>250 grams</option>
+                   <option>500 grams</option>
+                   <option>750 grams</option>
+                   <option>1000 grams</option>
+               </select><br/>
+           </div>
+           <button class="buynow_btn" onclick="addToCart(item7)">Add To Cart</button>
+       </div>
+      
+    </div>
+    <!-- milk end -->
+
+    <!-- cart start -->
+    <div class="deal_container" id="cart">
+        <div class="parallax">
+            <div class="title">CART</div>
+            <div id="title"></div>
+        </div>
+        
+        </div>
+<!-- Home page end -->
+<!-- footer -->
+        <div class="parallax1">
+            <div class="footer">
+                <div class="quick_links">
+                    <div>Locations</div>
+                    <ul>
+                        <li><a href="" class="a_links">Address1</Address></a></li>
+                        <li><a href="" class="a_links">Address2</Address></a></li>
+                        <li><a href="" class="a_links">Address3</Address></a></li>
+                    </ul>
+                </div>
+                <div class="quick_links">
+                    <div>Careers</div>
+                    <ul>
+                        <li><a href="" class="a_links">Packing Staff</Address></a></li>
+                        <li><a href="" class="a_links">Delivery Agents</Address></a></li>
+                        <li><a href="" class="a_links">Shelf Fillers</Address></a></li>
+                    </ul>
+                </div>
+                <div class="quick_links">
+                    <div>Quick-Links</div>
+                    <ul>
+                        <li><a href="" class="a_links">Contact Us</Address></a></li>
+                        <li><a href="" class="a_links">FAQ</Address></a></li>
+                        <li><a href="" class="a_links">Help</Address></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <i class="far fa-copyright fa-lx"></i>2023 By Vikas</div>
+            <!-- <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1948.2742565643969!2d73.81808287813155!3d18.48379110340033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bfde3ad4ded9%3A0xb388fa0fb0d653e8!2sShewale%20Park!5e0!3m2!1sen!2sin!4v1692334417409!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div> -->
+
+            <!-- script starts -->
+            <script>
+                var addItemId = 0;
+     function addToCart(item) {
+            addItemId += 1;
+        var selectedItem = document.createElement('div');
+        selectedItem.classList.add('cartImg');
+        selectedItem.setAttribute('id',addItemId);
+        var img = document.createElement('img');
+        img.setAttribute('src', item.children[0].currentSrc);
+    //    var title = document.createElement('div');
+    //    title.innerText = item.children[1].innerText;
+    //    var label = document.createElement('div');
+    //    label.innerText = item.children[2].children[0].innerText;
+    //    var select = document.createElement('span');
+    //    select.innerText = item.children[2].children[1].value;
+    //    label.append(select);
+    //    var delBtn = document.createElement('button');
+    //    delBtn.innerText = 'Delete';
+    //    delBtn.setAttribute('onclick', 'del('+addItemId+')');
+        var cartItems = document.getElementById('title');
+
+        selectedItem.append(img);   
+        // selectedItem.append(title);
+        // selectedItem.append(label);
+        // selectedItem.append(delBtn);
+       
+        cartItems.append(selectedItem);
+        
+        }
+        // function del(item){
+        //     document.getElementById(item).remove();
+        // }
+      
+            </script>
+</body>
+</html>
